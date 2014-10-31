@@ -1,14 +1,10 @@
 require 'rspec'
 require_relative './questions'
 
-RSpec.configure do |config|
-  config.color = true
-  config.formatter = :documentation
-end
 
 describe 'the Friday test :)' do
   
-  specify 'select_elements_starting_with_a' do
+  fspecify 'select_elements_starting_with_a' do
     n = select_elements_starting_with_a ['bananas', 'apples', 'pears', 'avocados']
     expect(n).to eq ['apples', 'avocados']
   end
