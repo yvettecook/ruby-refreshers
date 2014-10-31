@@ -142,7 +142,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 4
   end
 
-  specify 'round_down_number' do
+  fspecify 'round_down_number' do
     n = round_down_number 4.9
     expect(n).to eq 4
   end
