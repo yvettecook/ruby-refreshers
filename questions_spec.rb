@@ -82,7 +82,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 'a'
   end
 
-  specify 'longest_word_in_array' do
+  fspecify 'longest_word_in_array' do
     n = longest_word_in_array %w(here is a bunch of words of different lengths)
     expect(n).to eq 'different'
   end
