@@ -183,14 +183,14 @@ describe 'the Friday test :)' do
     expect(b).to equal true
   end
 
-  specify 'square_root_of' do
+  fspecify 'square_root_of' do
     a = square_root_of 9
     b = square_root_of 3
     expect(a).to eq 3.0
     expect(b).to eq 1.7320508075688772
   end
 
-  specify 'word_count_a_file' do
+  fspecify 'word_count_a_file' do
     n = word_count_a_file 'lorem.txt'
     expect(n).to eq 70
   end
