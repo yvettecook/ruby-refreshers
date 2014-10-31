@@ -132,7 +132,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 6
   end
 
-  specify 'remove_capital_letters_from_string' do
+  fspecify 'remove_capital_letters_from_string' do
     n = remove_capital_letters_from_string 'Hello JohnDoe'
     expect(n).to eq 'ello ohnoe'
   end
