@@ -97,7 +97,7 @@ describe 'the Friday test :)' do
     expect(n).to eq [1, 2, 3, 1, 2, 3]
   end
 
-  specify 'turn_symbol_into_string' do
+  fspecify 'turn_symbol_into_string' do
     n = turn_symbol_into_string :foobar
     expect(n).to eq 'foobar'
   end
