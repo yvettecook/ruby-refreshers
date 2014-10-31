@@ -59,7 +59,7 @@ describe 'the Friday test :)' do
     expect(b).to eq 'app'
   end
 
-  specify 'make_numbers_negative' do
+  fspecify 'make_numbers_negative' do
     a = make_numbers_negative 5
     b = make_numbers_negative -7
 
