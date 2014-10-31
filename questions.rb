@@ -131,6 +131,13 @@ end
 # [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
 # becomes [1, 3, 5, 4, 1, 2]
 def get_elements_until_greater_than_five(array)
+	new_array = []
+	n = 0
+	while array[n] < 6
+		new_array << array[n]
+		n += 1 
+	end
+	new_array
 end
 
 # turn an array (with an even number of elements) into a hash, by
