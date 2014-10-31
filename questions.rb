@@ -1,15 +1,11 @@
 # keep only the elements that start with an a
 def select_elements_starting_with_a(array)
-	results = []
-	array.each do |word|
-		firstletter = word.slice(0)
-		results << word if firstletter == 'a'
-	end
-	results
+	array.select { |word| word.start_with?('a') }
 end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
+	array.select { |word| word.start_with?('a','e','i','o','u') }
 end
 
 # remove instances of nil (but NOT false) from an array
