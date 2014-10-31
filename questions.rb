@@ -206,6 +206,14 @@ end
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
 def titleize_a_string(string)
+	non_caps = ['the', 'and', 'a']
+	sentance = string.split(' ')
+	titlized = sentance.map do |word| 
+		word.capitalize! if !non_caps.include?(word)
+		word
+	end
+	titlized[0].capitalize!
+	titlized.join(' ')
 end
 
 # return true if a string contains any special characters
